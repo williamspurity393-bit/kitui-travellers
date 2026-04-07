@@ -1,0 +1,127 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d0a02"/>
+      <stop offset="30%" stop-color="#1e1804"/>
+      <stop offset="65%" stop-color="#8b5a04"/>
+      <stop offset="90%" stop-color="#d48a10"/>
+      <stop offset="100%" stop-color="#f9b316"/>
+    </linearGradient>
+    <linearGradient id="rock1" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0%" stop-color="#c8803a"/>
+      <stop offset="50%" stop-color="#8b4a18"/>
+      <stop offset="100%" stop-color="#3d1e08"/>
+    </linearGradient>
+    <linearGradient id="rock2" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#a06028"/>
+      <stop offset="100%" stop-color="#2d1208"/>
+    </linearGradient>
+    <radialGradient id="sun-glow" cx="62%" cy="88%" r="35%">
+      <stop offset="0%" stop-color="#fde68a" stop-opacity="0.5"/>
+      <stop offset="40%" stop-color="#f9b316" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <linearGradient id="ground-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a2808"/>
+      <stop offset="100%" stop-color="#1e0e04"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="500" fill="url(#sky)"/>
+  <!-- Horizon glow -->
+  <ellipse cx="500" cy="410" rx="280" ry="120" fill="url(#sun-glow)"/>
+
+  <!-- Stars (sparse — twilight) -->
+  <circle cx="100" cy="40" r="1" fill="white" opacity="0.6"/>
+  <circle cx="220" cy="55" r="0.8" fill="white" opacity="0.5"/>
+  <circle cx="350" cy="30" r="1.1" fill="white" opacity="0.7"/>
+  <circle cx="680" cy="35" r="0.9" fill="white" opacity="0.6"/>
+  <circle cx="760" cy="60" r="1" fill="white" opacity="0.5"/>
+
+  <!-- Distant flat plains -->
+  <path d="M0 335 Q200 315 400 325 Q600 310 800 320 L800 360 L0 360Z" fill="#2d1808" opacity="0.8"/>
+
+  <!-- Ground -->
+  <path d="M0 380 Q400 360 800 375 L800 500 L0 500Z" fill="url(#ground-g)"/>
+
+  <!-- MAIN GAI ROCK formation - wide, ancient, layered -->
+  <!-- Base boulders -->
+  <ellipse cx="400" cy="430" rx="220" ry="50" fill="#2d1208" opacity="0.9"/>
+
+  <!-- Primary rock mass -->
+  <path d="M220 430 Q225 340 260 280 Q295 230 345 220 Q390 215 420 228 Q460 240 475 280 Q500 330 505 395 Q490 420 460 432 L240 432Z" fill="url(#rock1)"/>
+
+  <!-- Secondary rock left -->
+  <path d="M160 430 Q162 375 185 340 Q210 310 240 305 Q265 308 278 325 Q295 348 295 395 Q285 425 270 435 L165 435Z" fill="url(#rock2)" opacity="0.9"/>
+
+  <!-- Secondary rock right -->
+  <path d="M505 395 Q508 355 530 320 Q555 290 585 288 Q610 292 622 318 Q638 348 630 400 Q618 430 600 435 L508 435Z" fill="url(#rock2)" opacity="0.85"/>
+
+  <!-- Rock highlight face (sunlit side) -->
+  <path d="M340 222 Q390 218 420 230 Q465 244 478 282 Q490 320 488 375 Q460 355 440 320 Q418 285 400 255 Q380 228 350 225Z" fill="#d4a060" opacity="0.3"/>
+
+  <!-- Rock strata lines - geological layering -->
+  <path d="M250 300 Q350 288 450 296 Q475 300 490 308" stroke="#2d1208" stroke-width="2.5" fill="none" opacity="0.5"/>
+  <path d="M235 330 Q340 316 445 324 Q472 328 498 338" stroke="#2d1208" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M228 360 Q335 345 450 354 Q480 358 505 368" stroke="#2d1208" stroke-width="2" fill="none" opacity="0.35"/>
+  <path d="M222 395 Q340 380 470 390 Q490 393 508 400" stroke="#1a0c04" stroke-width="1.5" fill="none" opacity="0.3"/>
+
+  <!-- Rock shadow / crack -->
+  <path d="M360 224 Q355 270 348 320 Q342 365 345 400" stroke="#1a0c04" stroke-width="3" fill="none" opacity="0.5"/>
+  <path d="M420 232 Q415 278 408 330 Q402 375 405 405" stroke="#1a0c04" stroke-width="2" fill="none" opacity="0.4"/>
+
+  <!-- KAMBA CULTURAL ELEMENT - petroglyphs on rock face -->
+  <g opacity="0.35" fill="none" stroke="#fbbf24" stroke-width="1.5">
+    <!-- Concentric circles (sun/sacred symbol) -->
+    <circle cx="388" cy="295" r="18"/>
+    <circle cx="388" cy="295" r="11"/>
+    <circle cx="388" cy="295" r="5"/>
+    <!-- Radial lines from circle -->
+    <line x1="388" y1="277" x2="388" y2="265"/>
+    <line x1="406" y1="295" x2="418" y2="295"/>
+    <line x1="388" y1="313" x2="388" y2="325"/>
+    <line x1="370" y1="295" x2="358" y2="295"/>
+    <line x1="400" y1="283" x2="408" y2="275"/>
+    <line x1="400" y1="307" x2="408" y2="315"/>
+    <line x1="376" y1="307" x2="368" y2="315"/>
+    <line x1="376" y1="283" x2="368" y2="275"/>
+    <!-- Animal figures -->
+    <path d="M350 340 Q365 330 380 335 Q390 325 400 332 Q390 342 378 340 Q368 348 358 342 Q348 348 350 340Z"/>
+    <path d="M350 340 Q345 355 342 365" stroke-width="1"/>
+    <path d="M358 342 Q352 356 350 366" stroke-width="1"/>
+    <!-- Geometric pattern -->
+    <path d="M410 345 L420 330 L430 345 L420 360 L410 345Z"/>
+    <path d="M432 345 L442 330 L452 345 L442 360 L432 345Z"/>
+  </g>
+
+  <!-- Acacia tree - left -->
+  <rect x="90" y="310" width="4" height="120" fill="#1a0c04"/>
+  <line x1="92" y1="330" x2="50" y2="305" stroke="#1a0c04" stroke-width="3.5"/>
+  <line x1="92" y1="345" x2="140" y2="318" stroke="#1a0c04" stroke-width="3"/>
+  <ellipse cx="52" cy="298" rx="38" ry="20" fill="#2d1808" opacity="0.95"/>
+  <ellipse cx="138" cy="310" rx="34" ry="18" fill="#2d1808" opacity="0.9"/>
+
+  <!-- Acacia tree - far right -->
+  <rect x="700" y="325" width="3.5" height="105" fill="#1a0c04"/>
+  <line x1="702" y1="340" x2="658" y2="318" stroke="#1a0c04" stroke-width="3"/>
+  <line x1="702" y1="355" x2="745" y2="330" stroke="#1a0c04" stroke-width="2.5"/>
+  <ellipse cx="658" cy="312" rx="35" ry="18" fill="#2d1808" opacity="0.9"/>
+  <ellipse cx="742" cy="324" rx="30" ry="16" fill="#2d1808" opacity="0.85"/>
+
+  <!-- Silhouette person at base of rock -->
+  <circle cx="560" cy="408" r="6" fill="#0d0604"/>
+  <path d="M560 414 L556 435 M560 414 L564 435 M556 435 L553 455 M556 435 L559 455 M564 435 L561 455 M564 435 L567 455" stroke="#140a04" stroke-width="2.5" fill="none"/>
+  <!-- Person 2 -->
+  <circle cx="580" cy="412" r="5" fill="#0d0604"/>
+  <path d="M580 417 L577 436 M580 417 L583 436 M577 436 L575 455 M577 436 L579 455 M583 436 L581 455 M583 436 L585 455" stroke="#140a04" stroke-width="2" fill="none"/>
+
+  <!-- Ground rocks/pebbles -->
+  <ellipse cx="200" cy="435" rx="18" ry="8" fill="#3d1e08" opacity="0.7"/>
+  <ellipse cx="640" cy="430" rx="14" ry="6" fill="#3d1e08" opacity="0.7"/>
+  <ellipse cx="150" cy="448" rx="10" ry="5" fill="#2d1208" opacity="0.6"/>
+  <ellipse cx="680" cy="445" rx="12" ry="5" fill="#2d1208" opacity="0.6"/>
+
+  <!-- Amber warm overlay -->
+  <rect width="800" height="500" fill="#f9b316" opacity="0.03"/>
+</svg>

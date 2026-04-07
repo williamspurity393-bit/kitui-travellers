@@ -1,0 +1,138 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050e1a"/>
+      <stop offset="30%" stop-color="#0a1e2e"/>
+      <stop offset="65%" stop-color="#0e4a4a"/>
+      <stop offset="100%" stop-color="#145858"/>
+    </linearGradient>
+    <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a3030"/>
+      <stop offset="100%" stop-color="#051818"/>
+    </linearGradient>
+    <linearGradient id="hill2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f4040"/>
+      <stop offset="100%" stop-color="#082020"/>
+    </linearGradient>
+    <linearGradient id="hill3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#155050"/>
+      <stop offset="100%" stop-color="#0a2828"/>
+    </linearGradient>
+    <linearGradient id="fg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a6050"/>
+      <stop offset="100%" stop-color="#0a3028"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="75%" cy="18%" r="10%">
+      <stop offset="0%" stop-color="#e0f0f0"/>
+      <stop offset="60%" stop-color="#b0d8d8"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+    <filter id="soft-glow">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="500" fill="url(#sky)"/>
+
+  <!-- Moon glow -->
+  <circle cx="600" cy="90" r="38" fill="#b0d8d8" opacity="0.15" filter="url(#soft-glow)"/>
+  <circle cx="600" cy="90" r="20" fill="#d0eaea" opacity="0.85"/>
+  <circle cx="605" cy="87" r="16" fill="#e8f5f5" opacity="0.9"/>
+
+  <!-- Stars -->
+  <circle cx="50" cy="40" r="1" fill="white" opacity="0.6"/>
+  <circle cx="120" cy="60" r="0.8" fill="white" opacity="0.5"/>
+  <circle cx="200" cy="30" r="1.2" fill="white" opacity="0.7"/>
+  <circle cx="300" cy="55" r="0.9" fill="white" opacity="0.6"/>
+  <circle cx="450" cy="25" r="1.1" fill="white" opacity="0.8"/>
+  <circle cx="520" cy="50" r="0.8" fill="white" opacity="0.5"/>
+  <circle cx="700" cy="35" r="1" fill="white" opacity="0.6"/>
+  <circle cx="760" cy="70" r="0.8" fill="white" opacity="0.5"/>
+
+  <!-- Hill layers - teal palette -->
+  <path d="M0 330 Q100 280 200 295 Q300 268 420 282 Q540 260 660 275 Q740 262 800 270 L800 500 L0 500Z" fill="url(#hill1)"/>
+  <path d="M0 358 Q120 318 240 332 Q360 308 480 325 Q580 305 700 320 Q760 310 800 315 L800 500 L0 500Z" fill="url(#hill2)"/>
+  <path d="M0 385 Q150 355 280 368 Q400 348 520 362 Q640 345 780 358 L800 362 L800 500 L0 500Z" fill="url(#hill3)"/>
+
+  <!-- Foreground hill -->
+  <path d="M0 430 Q200 405 400 418 Q600 402 800 415 L800 500 L0 500Z" fill="url(#fg)"/>
+
+  <!-- Rock outcrop on hill -->
+  <path d="M340 362 Q348 348 360 352 Q370 340 382 348 Q388 358 380 368 L340 368Z" fill="#0a3030" opacity="0.9"/>
+  <path d="M500 350 Q510 336 522 342 Q534 330 548 338 Q552 350 542 358 L500 358Z" fill="#0a3030" opacity="0.85"/>
+
+  <!-- BIRDS - various sizes and positions showing flight -->
+  <!-- Bird flock cluster 1 - upper left -->
+  <g fill="#2dd4bf" opacity="0.85">
+    <!-- Large bird 1 -->
+    <path d="M80 145 Q95 135 110 140 Q105 150 95 148 Q90 155 80 145Z"/>
+    <path d="M110 140 Q125 130 140 135 Q135 145 125 143 Q120 150 110 140Z"/>
+    <!-- Medium bird -->
+    <path d="M155 130 Q167 122 178 126 Q174 134 166 132 Q162 138 155 130Z"/>
+    <path d="M178 126 Q190 118 201 122 Q197 130 189 128 Q185 134 178 126Z"/>
+    <!-- Small bird -->
+    <path d="M210 155 Q219 149 228 152 Q225 158 219 157 Q216 162 210 155Z"/>
+    <path d="M228 152 Q237 146 246 149 Q243 155 237 154 Q234 159 228 152Z"/>
+  </g>
+
+  <!-- Bird flock cluster 2 - center, dominant -->
+  <g fill="#2dd4bf" opacity="0.95">
+    <!-- Large soaring bird - hero -->
+    <path d="M330 180 Q355 162 380 172 Q370 188 358 184 Q350 196 330 180Z"/>
+    <path d="M380 172 Q405 154 428 164 Q418 180 406 176 Q398 188 380 172Z"/>
+    <!-- Wing detail -->
+    <path d="M354 180 Q362 188 370 182" stroke="#14b8a6" stroke-width="1.5" fill="none" opacity="0.5"/>
+    <path d="M396 174 Q404 182 412 176" stroke="#14b8a6" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+    <!-- Medium bird 1 -->
+    <path d="M290 215 Q305 206 318 210 Q314 220 306 218 Q302 225 290 215Z"/>
+    <path d="M318 210 Q333 201 346 205 Q342 215 334 213 Q330 220 318 210Z"/>
+
+    <!-- Medium bird 2 -->
+    <path d="M445 200 Q458 193 470 196 Q466 205 460 203 Q456 209 445 200Z"/>
+    <path d="M470 196 Q483 189 495 192 Q491 201 485 199 Q481 205 470 196Z"/>
+
+    <!-- Small birds scattered -->
+    <path d="M260 250 Q270 244 279 247 Q276 254 270 252 Q267 258 260 250Z"/>
+    <path d="M279 247 Q289 241 298 244 Q295 251 289 249 Q286 255 279 247Z"/>
+
+    <path d="M510 230 Q520 224 529 227 Q526 234 520 232 Q517 238 510 230Z"/>
+    <path d="M529 227 Q539 221 548 224 Q545 231 539 229 Q536 235 529 227Z"/>
+  </g>
+
+  <!-- Bird flock cluster 3 - right, distant -->
+  <g fill="#14b8a6" opacity="0.65">
+    <path d="M640 160 Q651 153 662 157 Q658 164 652 162 Q649 168 640 160Z"/>
+    <path d="M662 157 Q673 150 684 154 Q680 161 674 159 Q671 165 662 157Z"/>
+    <path d="M700 180 Q709 174 718 177 Q715 183 709 181 Q706 187 700 180Z"/>
+    <path d="M718 177 Q727 171 736 174 Q733 180 727 178 Q724 184 718 177Z"/>
+    <path d="M660 195 Q668 190 676 192 Q673 198 668 197 Q665 202 660 195Z"/>
+  </g>
+
+  <!-- Individual rare bird - hornbill silhouette -->
+  <g transform="translate(170, 280)" fill="#0a3a30" opacity="0.9">
+    <ellipse cx="0" cy="0" rx="28" ry="10"/>
+    <circle cx="-20" cy="-5" r="10"/>
+    <!-- Casque/horn -->
+    <path d="M-26 -10 Q-22 -22 -15 -18 Q-10 -25 -8 -15" stroke="#2dd4bf" stroke-width="2" fill="none"/>
+    <!-- Beak -->
+    <path d="M-28 -3 Q-42 0 -40 6 Q-38 10 -30 8 Q-22 6 -20 -3" fill="#fbbf24" opacity="0.8"/>
+    <!-- Wings -->
+    <path d="M-15 5 Q0 18 20 8 Q15 -2 0 2Z" fill="#0a3a30"/>
+    <path d="M-15 5 Q-5 -8 20 0 Q15 12 0 10Z" fill="#155050" opacity="0.6"/>
+    <!-- Tail -->
+    <path d="M25 0 Q42 -5 40 5 Q38 12 28 8" fill="#0a3a30"/>
+  </g>
+
+  <!-- Acacia silhouette on hill -->
+  <rect x="560" y="360" width="3" height="60" fill="#051818"/>
+  <path d="M545 360 Q562 335 575 346 Q585 328 600 340 Q612 326 624 340 Q618 354 605 346 Q594 362 580 352 Q566 366 556 356 Q544 368 545 360Z" fill="#0a2a28"/>
+
+  <!-- Foreground vegetation -->
+  <path d="M20 450 L16 428 M28 452 L32 425 M40 450 L36 430" stroke="#1a6050" stroke-width="2.5" opacity="0.7"/>
+  <path d="M750 448 L746 426 M758 450 L762 423 M770 448 L766 428" stroke="#1a6050" stroke-width="2.5" opacity="0.7"/>
+
+  <!-- Cool teal atmospheric tint -->
+  <rect width="800" height="500" fill="#2dd4bf" opacity="0.02"/>
+</svg>

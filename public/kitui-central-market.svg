@@ -1,0 +1,170 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0c04"/>
+      <stop offset="100%" stop-color="#0d0602"/>
+    </linearGradient>
+    <linearGradient id="stall1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#c04a08"/>
+    </linearGradient>
+    <linearGradient id="stall2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#0f7a50"/>
+    </linearGradient>
+    <linearGradient id="stall3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="stall4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#4338ca"/>
+    </linearGradient>
+    <linearGradient id="stall5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#be185d"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d1a08"/>
+      <stop offset="100%" stop-color="#1a0e04"/>
+    </linearGradient>
+    <pattern id="weave" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="none"/>
+      <line x1="0" y1="0" x2="12" y2="12" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+      <line x1="12" y1="0" x2="0" y2="12" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+    <filter id="warm-glow">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- Ambient warm light from stalls -->
+  <ellipse cx="200" cy="300" rx="180" ry="150" fill="#f97316" opacity="0.08" filter="url(#warm-glow)"/>
+  <ellipse cx="600" cy="300" rx="180" ry="150" fill="#fbbf24" opacity="0.06" filter="url(#warm-glow)"/>
+
+  <!-- Ground -->
+  <rect x="0" y="360" width="800" height="140" fill="url(#floor)"/>
+  <!-- Ground texture lines -->
+  <line x1="0" y1="380" x2="800" y2="380" stroke="#3d2210" stroke-width="0.5" opacity="0.4"/>
+  <line x1="0" y1="400" x2="800" y2="400" stroke="#3d2210" stroke-width="0.5" opacity="0.3"/>
+  <line x1="0" y1="420" x2="800" y2="420" stroke="#3d2210" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- STALL 1 - Orange (left) -->
+  <rect x="40" y="200" width="180" height="8" rx="2" fill="url(#stall1)"/>
+  <!-- Scalloped awning edge -->
+  <path d="M40 208 Q52 225 65 208 Q77 225 90 208 Q102 225 115 208 Q127 225 140 208 Q152 225 165 208 Q177 225 190 208 Q202 225 215 208 Q220 208 220 208 L220 208" fill="url(#stall1)" opacity="0.85"/>
+  <!-- Stall posts -->
+  <rect x="52" y="208" width="5" height="155" fill="#8b3a08"/>
+  <rect x="207" y="208" width="5" height="155" fill="#8b3a08"/>
+  <!-- Stall back wall -->
+  <rect x="57" y="220" width="155" height="120" fill="#1a0a04" opacity="0.8"/>
+  <!-- Produce display - circular items (fruits) -->
+  <circle cx="90" cy="310" r="12" fill="#f97316"/>
+  <circle cx="115" cy="308" r="14" fill="#fbbf24"/>
+  <circle cx="143" cy="311" r="11" fill="#ef4444"/>
+  <circle cx="168" cy="309" r="13" fill="#f97316"/>
+  <circle cx="192" cy="311" r="10" fill="#fbbf24"/>
+  <!-- Produce table -->
+  <rect x="60" y="318" width="148" height="10" fill="#5c3010" rx="2"/>
+  <!-- Hanging items -->
+  <line x1="85" y1="220" x2="85" y2="268" stroke="#8b3a08" stroke-width="1"/>
+  <ellipse cx="85" cy="272" rx="8" ry="12" fill="#34d399" opacity="0.9"/>
+  <line x1="120" y1="220" x2="120" y2="260" stroke="#8b3a08" stroke-width="1"/>
+  <ellipse cx="120" cy="265" rx="10" ry="15" fill="#fbbf24" opacity="0.9"/>
+  <line x1="155" y1="220" x2="155" y2="265" stroke="#8b3a08" stroke-width="1"/>
+  <ellipse cx="155" cy="270" rx="8" ry="12" fill="#f97316" opacity="0.9"/>
+  <!-- Vendor silhouette -->
+  <circle cx="135" cy="342" r="8" fill="#1a0a04"/>
+  <path d="M135 350 L130 375 M135 350 L140 375 M130 375 L127 395 M130 375 L133 395 M140 375 L137 395 M140 375 L143 395" stroke="#2d1208" stroke-width="3" fill="none"/>
+
+  <!-- STALL 2 - Green (center-left) -->
+  <rect x="260" y="185" width="170" height="8" rx="2" fill="url(#stall2)"/>
+  <path d="M260 193 Q272 212 285 193 Q298 212 311 193 Q324 212 337 193 Q350 212 363 193 Q376 212 389 193 Q402 212 415 193 Q428 212 430 193 L430 193" fill="url(#stall2)" opacity="0.8"/>
+  <rect x="272" y="193" width="5" height="170" fill="#0a4a28"/>
+  <rect x="423" y="193" width="5" height="170" fill="#0a4a28"/>
+  <rect x="277" y="208" width="146" height="125" fill="#0a1804" opacity="0.85"/>
+  <!-- Baskets and woven goods -->
+  <ellipse cx="305" cy="310" rx="18" ry="12" fill="#8b5a1a"/>
+  <path d="M287 310 Q305 298 323 310" stroke="#c8944a" stroke-width="2" fill="none"/>
+  <ellipse cx="350" cy="308" rx="22" ry="14" fill="#7a4e14"/>
+  <path d="M328 308 Q350 295 372 308" stroke="#c8944a" stroke-width="2" fill="none"/>
+  <ellipse cx="398" cy="311" rx="15" ry="10" fill="#8b5a1a"/>
+  <!-- Hanging beadwork -->
+  <line x1="300" y1="208" x2="300" y2="270" stroke="#0a4a28" stroke-width="1"/>
+  <path d="M292 270 Q300 278 308 270 Q316 262 300 258 Q284 254 292 270Z" fill="#f472b6" opacity="0.8"/>
+  <line x1="350" y1="208" x2="350" y2="262" stroke="#0a4a28" stroke-width="1"/>
+  <path d="M342 262 Q350 272 358 262 Q366 252 350 248 Q334 244 342 262Z" fill="#818cf8" opacity="0.8"/>
+  <!-- Kamba pattern textile -->
+  <rect x="277" y="215" width="146" height="35" fill="#1e4820"/>
+  <path d="M277 220 L423 220 M277 230 L423 230 M277 240 L423 240" stroke="#34d399" stroke-width="0.8" opacity="0.4"/>
+  <path d="M290 215 L290 250 M310 215 L310 250 M330 215 L330 250 M350 215 L350 250 M370 215 L370 250 M390 215 L390 250 M410 215 L410 250" stroke="#34d399" stroke-width="0.8" opacity="0.3"/>
+
+  <!-- STALL 3 - Yellow (center-right) -->
+  <rect x="470" y="192" width="160" height="8" rx="2" fill="url(#stall3)"/>
+  <path d="M470 200 Q482 218 495 200 Q508 218 521 200 Q534 218 547 200 Q560 218 573 200 Q586 218 599 200 Q612 218 625 200 Q630 200 630 200 L630 200" fill="url(#stall3)" opacity="0.85"/>
+  <rect x="482" y="200" width="5" height="163" fill="#a05a08"/>
+  <rect x="623" y="200" width="5" height="163" fill="#a05a08"/>
+  <rect x="487" y="215" width="136" height="110" fill="#1a1004" opacity="0.85"/>
+  <!-- Spice mounds and grain piles -->
+  <ellipse cx="515" cy="320" rx="20" ry="10" fill="#f97316" opacity="0.9"/>
+  <ellipse cx="555" cy="318" rx="22" ry="11" fill="#fbbf24" opacity="0.9"/>
+  <ellipse cx="597" cy="320" rx="18" ry="10" fill="#ef4444" opacity="0.9"/>
+  <rect x="490" y="322" width="132" height="8" fill="#7a4a0a" rx="2"/>
+  <!-- Char coal sacks -->
+  <ellipse cx="510" cy="270" rx="16" ry="20" fill="#1a1a1a"/>
+  <ellipse cx="545" cy="268" rx="18" ry="22" fill="#222"/>
+  <ellipse cx="582" cy="271" rx="15" ry="18" fill="#1a1a1a"/>
+  <!-- Labels on sacks -->
+  <text x="503" y="272" font-size="8" fill="#fbbf24" opacity="0.6" font-family="monospace">KG</text>
+  <text x="538" y="270" font-size="8" fill="#fbbf24" opacity="0.6" font-family="monospace">50</text>
+
+  <!-- STALL 4 - Purple (right) -->
+  <rect x="620" y="198" width="155" height="8" rx="2" fill="url(#stall4)"/>
+  <path d="M620 206 Q632 225 645 206 Q658 225 671 206 Q684 225 697 206 Q710 225 723 206 Q736 225 749 206 Q762 225 775 206 L775 206" fill="url(#stall4)" opacity="0.8"/>
+  <rect x="632" y="206" width="5" height="157" fill="#3730a3"/>
+  <rect x="768" y="206" width="5" height="157" fill="#3730a3"/>
+  <rect x="637" y="220" width="131" height="110" fill="#100e28" opacity="0.9"/>
+  <!-- Craft items - carved stools, figurines -->
+  <path d="M660 315 L668 295 L676 315 L660 315Z" fill="#c8944a"/>
+  <rect x="658" y="315" width="20" height="8" rx="2" fill="#8b5a2b"/>
+  <path d="M700 318 L705 298 Q710 288 715 298 L720 318Z" fill="#c8944a"/>
+  <rect x="698" y="318" width="24" height="7" rx="2" fill="#8b5a2b"/>
+  <!-- Hanging textile with Kamba pattern -->
+  <rect x="638" y="220" width="130" height="55" fill="#1a1840"/>
+  <path d="M638 232 L768 232 M638 244 L768 244 M638 256 L768 256" stroke="#818cf8" stroke-width="1" opacity="0.5"/>
+  <path d="M655 220 L655 275 M675 220 L675 275 M695 220 L695 275 M715 220 L715 275 M735 220 L735 275 M755 220 L755 275" stroke="#818cf8" stroke-width="0.8" opacity="0.3"/>
+  <!-- Diamond pattern -->
+  <path d="M655 232 L675 244 L695 232 L715 244 L735 232 L755 244" stroke="#f97316" stroke-width="1.5" fill="none" opacity="0.6"/>
+
+  <!-- People silhouettes browsing -->
+  <!-- Person 1 -->
+  <circle cx="240" cy="345" r="7" fill="#0a0604"/>
+  <path d="M240 352 L236 378 M240 352 L244 378 M236 378 L233 398 M236 378 L239 398 M244 378 L241 398 M244 378 L247 398" stroke="#140a04" stroke-width="2.8" fill="none"/>
+
+  <!-- Person 2 -->
+  <circle cx="455" cy="340" r="8" fill="#0a0604"/>
+  <path d="M455 348 L450 376 M455 348 L460 376 M450 376 L447 396 M450 376 L453 396 M460 376 L457 396 M460 376 L463 396" stroke="#140a04" stroke-width="3" fill="none"/>
+
+  <!-- Light rays from stalls -->
+  <path d="M130 208 L80 160 M130 208 L60 200 M130 208 L100 250" stroke="#f97316" stroke-width="0.5" opacity="0.15"/>
+  <path d="M345 193 L300 150 M345 193 L380 155" stroke="#34d399" stroke-width="0.5" opacity="0.12"/>
+
+  <!-- Overhead string lights -->
+  <path d="M40 160 Q200 155 400 162 Q600 155 770 160" stroke="#2d1a08" stroke-width="1" fill="none"/>
+  <circle cx="100" cy="162" r="3" fill="#fde68a" opacity="0.8"/>
+  <circle cx="160" cy="158" r="3" fill="#f97316" opacity="0.7"/>
+  <circle cx="230" cy="163" r="3" fill="#fde68a" opacity="0.9"/>
+  <circle cx="310" cy="158" r="3" fill="#34d399" opacity="0.7"/>
+  <circle cx="390" cy="163" r="3" fill="#fde68a" opacity="0.8"/>
+  <circle cx="470" cy="157" r="3" fill="#818cf8" opacity="0.7"/>
+  <circle cx="550" cy="162" r="3" fill="#fde68a" opacity="0.8"/>
+  <circle cx="630" cy="158" r="3" fill="#f472b6" opacity="0.7"/>
+  <circle cx="710" cy="163" r="3" fill="#fde68a" opacity="0.9"/>
+
+  <!-- Warm atmospheric overlay -->
+  <rect width="800" height="500" fill="#f97316" opacity="0.03"/>
+</svg>

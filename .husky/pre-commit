@@ -1,0 +1,28 @@
+#!/bin/sh
+
+echo '🏗️👷 Checking your code before committing...'
+
+# Check Prettier standards
+bun run format:check || {
+  echo '🤢🤮 Its F**KING RAW - Your styling looks disgusting. 🤢🤮'
+  echo 'Prettier check failed. Run "bun run format", add the changes and try committing again.'
+  exit 1
+}
+
+# Check TypeScript standards
+bun run check-types || {
+  echo '🤡❌ Failed type check. 🤡❌'
+  echo 'Fix the type errors above and try committing again.'
+  exit 1
+}
+
+# Try to build
+echo '🤔 Alright... Code looks good to me... Trying to build now. 🤔'
+
+bun run build || {
+  echo '❌👷 Better call Bob... Because your build failed. ❌👷'
+  echo 'Next build failed. Check the errors above to see why.'
+  exit 1
+}
+
+echo '✅ You win this time... Committing now. ✅'

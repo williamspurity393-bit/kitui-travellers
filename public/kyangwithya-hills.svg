@@ -1,0 +1,95 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#060d1e"/>
+      <stop offset="25%" stop-color="#0e1a3a"/>
+      <stop offset="55%" stop-color="#1a2870"/>
+      <stop offset="75%" stop-color="#7a3510"/>
+      <stop offset="90%" stop-color="#d45510"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <radialGradient id="sunrise" cx="50%" cy="85%" r="45%">
+      <stop offset="0%" stop-color="#fde68a" stop-opacity="0.95"/>
+      <stop offset="20%" stop-color="#f97316" stop-opacity="0.7"/>
+      <stop offset="60%" stop-color="#c04010" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0e1a3a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3050"/>
+      <stop offset="100%" stop-color="#0a1828"/>
+    </linearGradient>
+    <linearGradient id="hill2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#243860"/>
+      <stop offset="100%" stop-color="#0e2035"/>
+    </linearGradient>
+    <linearGradient id="hill3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e4820"/>
+      <stop offset="100%" stop-color="#0a1e0c"/>
+    </linearGradient>
+    <linearGradient id="foreground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d5018"/>
+      <stop offset="100%" stop-color="#0f1e08"/>
+    </linearGradient>
+    <filter id="glow-filter">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="800" height="500" fill="url(#sky)"/>
+
+  <!-- Sunrise glow -->
+  <ellipse cx="400" cy="430" rx="380" ry="180" fill="url(#sunrise)"/>
+
+  <!-- Stars -->
+  <circle cx="80" cy="50" r="1.2" fill="white" opacity="0.7"/>
+  <circle cx="155" cy="30" r="0.9" fill="white" opacity="0.8"/>
+  <circle cx="280" cy="60" r="1" fill="white" opacity="0.6"/>
+  <circle cx="520" cy="25" r="1.3" fill="white" opacity="0.9"/>
+  <circle cx="650" cy="45" r="0.8" fill="white" opacity="0.7"/>
+  <circle cx="740" cy="70" r="1.1" fill="white" opacity="0.6"/>
+  <circle cx="320" cy="40" r="0.7" fill="white" opacity="0.5"/>
+  <circle cx="430" cy="15" r="1" fill="white" opacity="0.8"/>
+
+  <!-- Hill range 1 - most distant, dark blue -->
+  <path d="M0 310 Q60 255 140 270 Q220 250 310 262 Q390 245 470 258 Q550 240 640 255 Q720 242 800 255 L800 500 L0 500Z" fill="url(#hill1)" opacity="0.9"/>
+
+  <!-- Hill range 2 - mid distance -->
+  <path d="M0 340 Q50 295 130 308 Q200 285 290 300 Q360 278 440 295 Q510 275 590 290 Q670 278 760 292 L800 298 L800 500 L0 500Z" fill="url(#hill2)"/>
+
+  <!-- Hill range 3 - closer, greenish -->
+  <path d="M0 370 Q70 330 150 345 Q230 318 320 335 Q390 315 470 330 Q550 312 630 328 Q710 315 800 328 L800 500 L0 500Z" fill="url(#hill3)"/>
+
+  <!-- Foreground hill with hikers' path hint -->
+  <path d="M0 415 Q100 388 200 400 Q300 385 400 395 Q500 382 600 395 Q700 382 800 392 L800 500 L0 500Z" fill="url(#foreground)"/>
+
+  <!-- Trail path on foreground hill -->
+  <path d="M150 430 Q220 418 300 410 Q380 402 460 408 Q540 400 620 412" stroke="#f97316" stroke-width="1.5" fill="none" opacity="0.3" stroke-dasharray="8,5"/>
+
+  <!-- Rock outcrops on hills -->
+  <path d="M180 340 Q188 328 198 330 Q206 322 214 328 Q212 340 200 342Z" fill="#1a3050" opacity="0.8"/>
+  <path d="M540 322 Q550 310 562 314 Q572 306 582 312 Q578 325 564 328Z" fill="#1e3860" opacity="0.8"/>
+  <path d="M320 358 Q328 346 338 350 Q344 342 352 348 Q348 360 336 362Z" fill="#243818" opacity="0.9"/>
+
+  <!-- Acacia silhouettes on ridgeline -->
+  <rect x="265" y="332" width="2.5" height="30" fill="#0a1e0c"/>
+  <path d="M255 332 Q266 312 278 320 Q285 308 296 318 Q302 308 310 318 Q305 328 295 322 Q286 335 275 326 Q264 338 255 332Z" fill="#0f2a10"/>
+
+  <rect x="610" y="320" width="2.5" height="28" fill="#0a1e0c"/>
+  <path d="M600 320 Q611 300 623 310 Q630 298 642 308 Q648 298 656 308 Q651 320 640 313 Q630 327 620 318 Q608 328 600 320Z" fill="#0f2a10"/>
+
+  <!-- Foreground vegetation tufts -->
+  <path d="M50 430 L46 410 M58 432 L62 408 M70 430 L66 412" stroke="#2d6018" stroke-width="2" opacity="0.7"/>
+  <path d="M380 425 L376 406 M388 426 L392 404 M400 425 L396 408" stroke="#2d6018" stroke-width="2" opacity="0.6"/>
+  <path d="M720 428 L716 409 M728 430 L732 406 M740 428 L736 410" stroke="#2d6018" stroke-width="2" opacity="0.7"/>
+
+  <!-- Hiker silhouettes on path -->
+  <circle cx="305" cy="406" r="3.5" fill="#0a1204" opacity="0.8"/>
+  <path d="M305 410 L303 422 M305 410 L302 405 M305 410 L308 405 M303 422 L300 432 M303 422 L306 432" stroke="#0a1204" stroke-width="1.8" fill="none" opacity="0.8"/>
+  <circle cx="318" cy="408" r="3" fill="#0a1204" opacity="0.7"/>
+  <path d="M318 412 L316 424 M318 412 L315 407 M318 412 L321 407 M316 424 L313 434 M316 424 L319 434" stroke="#0a1204" stroke-width="1.5" fill="none" opacity="0.7"/>
+
+  <!-- Warm glow tint -->
+  <rect width="800" height="500" fill="#f97316" opacity="0.04"/>
+</svg>

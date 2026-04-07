@@ -1,0 +1,116 @@
+<svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a2540"/>
+      <stop offset="100%" stop-color="#0b1120"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#ea6e0a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#f97316" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="192" height="192" rx="42" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <defs>
+    <pattern id="grid" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#f97316" stroke-width="0.3" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="192" height="192" rx="42" fill="url(#grid)"/>
+
+  <!-- Orange glow -->
+  <circle cx="96" cy="96" r="70" fill="#f97316" opacity="0.06"/>
+
+  <!-- BUS ILLUSTRATION - clean, bold -->
+  <!-- Bus body main -->
+  <rect x="24" y="72" width="144" height="74" rx="12" fill="url(#orange)" filter="url(#shadow)"/>
+
+  <!-- Bus front cap -->
+  <rect x="20" y="80" width="16" height="56" rx="8" fill="url(#orange)"/>
+
+  <!-- Bus roof -->
+  <rect x="30" y="54" width="132" height="26" rx="10" fill="url(#orange)"/>
+
+  <!-- Roof rack / detail line -->
+  <rect x="38" y="52" width="118" height="4" rx="2" fill="#fb923c" opacity="0.6"/>
+
+  <!-- Windows row - top -->
+  <rect x="42" y="60" width="30" height="18" rx="5" fill="#0b1120" opacity="0.85"/>
+  <rect x="81" y="60" width="30" height="18" rx="5" fill="#0b1120" opacity="0.85"/>
+  <rect x="120" y="60" width="30" height="18" rx="5" fill="#0b1120" opacity="0.85"/>
+
+  <!-- Window reflections -->
+  <rect x="44" y="62" width="8" height="5" rx="2" fill="white" opacity="0.15"/>
+  <rect x="83" y="62" width="8" height="5" rx="2" fill="white" opacity="0.15"/>
+  <rect x="122" y="62" width="8" height="5" rx="2" fill="white" opacity="0.15"/>
+
+  <!-- Side windows -->
+  <rect x="42" y="82" width="34" height="28" rx="6" fill="#0b1120" opacity="0.85"/>
+  <rect x="86" y="82" width="34" height="28" rx="6" fill="#0b1120" opacity="0.85"/>
+  <rect x="130" y="82" width="30" height="28" rx="6" fill="#0b1120" opacity="0.85"/>
+
+  <!-- Window reflections side -->
+  <rect x="44" y="84" width="10" height="7" rx="2" fill="white" opacity="0.12"/>
+  <rect x="88" y="84" width="10" height="7" rx="2" fill="white" opacity="0.12"/>
+  <rect x="132" y="84" width="10" height="7" rx="2" fill="white" opacity="0.12"/>
+
+  <!-- Door -->
+  <rect x="60" y="112" width="22" height="30" rx="4" fill="#0b1120" opacity="0.7"/>
+  <circle cx="79" cy="128" r="3" fill="#f97316" opacity="0.8"/>
+
+  <!-- Front detail -->
+  <rect x="22" y="90" width="12" height="8" rx="3" fill="#0b1120" opacity="0.5"/>
+  <!-- Headlight -->
+  <rect x="22" y="100" width="14" height="10" rx="3" fill="#fde68a" opacity="0.85"/>
+  <rect x="22" y="100" width="14" height="10" rx="3" fill="white" opacity="0.3"/>
+
+  <!-- KT Letters branding on bus side -->
+  <text x="97" y="107" font-family="Arial Black, sans-serif" font-weight="900" font-size="16" fill="#0b1120" opacity="0.4" text-anchor="middle" letter-spacing="2">KT</text>
+
+  <!-- Orange stripe along body -->
+  <rect x="20" y="120" width="148" height="5" rx="0" fill="#fbbf24" opacity="0.25"/>
+
+  <!-- Undercarriage -->
+  <rect x="30" y="142" width="132" height="8" rx="4" fill="#0b1120" opacity="0.4"/>
+
+  <!-- Wheels -->
+  <!-- Front wheel -->
+  <circle cx="56" cy="156" r="20" fill="#0b1120"/>
+  <circle cx="56" cy="156" r="14" fill="#1a2540"/>
+  <circle cx="56" cy="156" r="8" fill="url(#orange)" opacity="0.8"/>
+  <circle cx="56" cy="156" r="4" fill="#0b1120"/>
+  <!-- Wheel bolts -->
+  <circle cx="56" cy="144" r="2" fill="#f97316" opacity="0.5"/>
+  <circle cx="68" cy="156" r="2" fill="#f97316" opacity="0.5"/>
+  <circle cx="56" cy="168" r="2" fill="#f97316" opacity="0.5"/>
+  <circle cx="44" cy="156" r="2" fill="#f97316" opacity="0.5"/>
+
+  <!-- Rear wheel -->
+  <circle cx="136" cy="156" r="20" fill="#0b1120"/>
+  <circle cx="136" cy="156" r="14" fill="#1a2540"/>
+  <circle cx="136" cy="156" r="8" fill="url(#orange)" opacity="0.8"/>
+  <circle cx="136" cy="156" r="4" fill="#0b1120"/>
+  <!-- Wheel bolts -->
+  <circle cx="136" cy="144" r="2" fill="#f97316" opacity="0.5"/>
+  <circle cx="148" cy="156" r="2" fill="#f97316" opacity="0.5"/>
+  <circle cx="136" cy="168" r="2" fill="#f97316" opacity="0.5"/>
+  <circle cx="124" cy="156" r="2" fill="#f97316" opacity="0.5"/>
+
+  <!-- Road / ground line -->
+  <rect x="0" y="176" width="192" height="3" rx="1.5" fill="url(#accent)" opacity="0.2"/>
+
+  <!-- Speed lines (motion) -->
+  <line x1="8" y1="110" x2="18" y2="110" stroke="#f97316" stroke-width="2" opacity="0.4"/>
+  <line x1="8" y1="118" x2="22" y2="118" stroke="#f97316" stroke-width="2" opacity="0.3"/>
+  <line x1="8" y1="126" x2="16" y2="126" stroke="#f97316" stroke-width="1.5" opacity="0.2"/>
+</svg>
